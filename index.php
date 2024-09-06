@@ -47,6 +47,13 @@ var_dump($result);
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Genera Password</button>
                 </form>
+                <!-- mostro il risultato a video -->
+                <?php if ($result): ?>
+                    <div class="mt-3">
+                        <h2>La tua password è:</h2>
+                        <p class="bg-light p-3"><?php echo $result; ?></p>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
