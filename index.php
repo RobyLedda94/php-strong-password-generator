@@ -4,8 +4,8 @@
 include __DIR__ . '/function.php';
 
 // variabile di controllo ed assegnazzione della lunghezza 
-$lunghezza = isset($_GET['lunghezza']) && is_numeric($_GET['lunghezza']) && $_GET['lunghezza'] > 0 ? intval($_GET['lunghezza']) : 10;
-$result = generaPassword($lunghezza);
+$lunghezza = isset($_GET['lunghezza']) && is_numeric($_GET['lunghezza']) && $_GET['lunghezza'] > 0 ? intval($_GET['lunghezza']) : 0;
+$result = $lunghezza > 0 ? generaPassword($lunghezza) : '';
 
 // debug della password generata
 var_dump($result);
