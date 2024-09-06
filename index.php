@@ -43,7 +43,7 @@ var_dump($result);
                 <form method="GET" action="index.php">
                     <div class="mb-3">
                         <label for="lunghezza" class="form-label"><strong>Lunghezza della password :</strong></label>
-                        <input type="text" class="form-control" name="lunghezza" id="lunghezza">
+                        <input type="number" class="form-control" name="lunghezza" id="lunghezza" value="<?php echo $_GET['lunghezza']; ?>">
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Genera Password</button>
                 </form>
