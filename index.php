@@ -13,9 +13,16 @@ function generaPassword($lunghezza) {
     }
 
     return $password;
+    
 }
+$result = generaPassword(10);
 
-var_dump($password);
+var_dump($result);
+
+
+
+
+
 
 
 
