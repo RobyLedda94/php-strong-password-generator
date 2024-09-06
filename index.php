@@ -6,8 +6,19 @@ function generaPassword($lunghezza) {
     // variabile che salva la password generata
     $password = '';
 
-    // da definire il ciclo for all'interno della funzione
+    // ciclo per generare la password
+    for ($i = 0; $i < $lunghezza; $i++) {
+        $password .= $caratteri[rand(0, strlen($caratteri) -1 )];
+    }
+
+    return $password;
+    
+
 }
+
+
+
+
 
 ?>
 
