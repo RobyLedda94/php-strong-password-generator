@@ -5,6 +5,7 @@ function generaPassword($lunghezza) {
     $caratteri = 'abcdefghilmnopqrstuvwxyzABCDEFGHILMNOPQRSTUVWXYZ0123456789!@#%$';
     // variabile che salva la password generata
     $password = '';
+    var_dump($password);
 
     // ciclo per generare la password
     for ($i = 0; $i < $lunghezza; $i++) {
@@ -12,9 +13,9 @@ function generaPassword($lunghezza) {
     }
 
     return $password;
-    
-
 }
+
+var_dump($password);
 
 
 
