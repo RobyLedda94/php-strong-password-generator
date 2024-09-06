@@ -1,5 +1,13 @@
 <?php 
+// definisco la funzione per generare una password casuale
+function generaPassword($lunghezza) {
+    // variabile che contiene i caratteri speciali
+    $caratteri = 'abcdefghilmnopqrstuvwxyzABCDEFGHILMNOPQRSTUVWXYZ0123456789!@#%$';
+    // variabile che salva la password generata
+    $password = '';
 
+    // da definire il ciclo for all'interno della funzione
+}
 
 ?>
 
