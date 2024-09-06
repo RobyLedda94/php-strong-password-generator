@@ -5,28 +5,23 @@ function generaPassword($lunghezza) {
     $caratteri = 'abcdefghilmnopqrstuvwxyzABCDEFGHILMNOPQRSTUVWXYZ0123456789!@#%$';
     // variabile che salva la password generata
     $password = '';
-    var_dump($password);
 
     // ciclo per generare la password
     for ($i = 0; $i < $lunghezza; $i++) {
-        $password .= $caratteri[rand(0, strlen($caratteri) -1 )];
+        $carattere = $caratteri[rand(0, strlen($caratteri) -1 )];
+        $password .= $carattere;
     }
 
     return $password;
     
 }
-$result = generaPassword(10);
 
+// variabile di controllo ed assegnazzione della lunghezza 
+$lunghezza = isset($_GET['lunghezza']) && is_numeric($_GET['lunghezza']) && $_GET['lunghezza'] > 0 ? intval($_GET['lunghezza']) : 10;
+$result = generaPassword($lunghezza);
+
+// debug della password generata
 var_dump($result);
-
-
-
-
-
-
-
-
-
 
 ?>
 
